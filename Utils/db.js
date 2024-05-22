@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
- const URI = "mongodb://localhost:27017/Practice"
-//const URI = process.env.MONGODB_URI ;
+//  const URI = "mongodb://localhost:27017/Practice"
+const URI = process.env.MONGODB_URI ;
 
 export const connectDB = async () =>{
     try {
