@@ -6,7 +6,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --experimental-modules --es-module-specifier-resolution=node app.js"
+    "start": "nodemon --experimental-modules --es-module-specifier-resolution=node app.js",
+    "build": "echo 'No build step required.'"
   },
   "keywords": [],
   "author": "",
