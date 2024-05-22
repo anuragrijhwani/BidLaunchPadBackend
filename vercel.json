@@ -1,20 +1,19 @@
 {
   "version": 2,
-  "name": "BidLaunchPadBackend",
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/node"
+      "src": "next.config.js",
+      "use": "@vercel/next"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/app.js"
+      "dest": "/$1"
     }
   ],
   "env": {
     "NODE_ENV": "production",
-    "CUSTOM_ENV_VARIABLE": "value"
+    "VERCEL_TOKEN": "@vercel_token"
   }
 }
